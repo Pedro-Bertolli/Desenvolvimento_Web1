@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato</title>
+
+        <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="margin: 0;">
+            <div class="container-fluid">
+                <a class="navbar-brand">Início</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="form.html">Formulário</a>
+                        <br>
+                        <a class="nav-link" href="infos.html">Sobre Nós</a>
+                        <br>
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container mt-5">
+            <div class="pag text-center">
+                <h1 class="mb-4">Fale Conosco - AutoDrive</h1>
+                <p class="mb-4">Preencha o formulário abaixo para entrar em contato com nossa equipe. Estamos prontos para ajudar você!</p>
+                <form class="row g-3" action="" method="get">
+                    <div class="col-md-6">
+                        <label for="nome" class="form-label">Primeiro Nome:</label>
+                        <input type="text" class="form-control" placeholder="Seu primeiro nome" aria-label="Primeiro nome">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="sobrenome" class="form-label">Sobrenome:</label>
+                        <input type="text" class="form-control" placeholder="Seu sobrenome" aria-label="Sobrenome">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="assunto" class="form-label">Assunto:</label>
+                        <input type="text" class="form-control" id="assunto" placeholder="Motivo do contato">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="telefone" class="form-label">Telefone:</label>
+                        <input type="tel" class="form-control" id="telefone" placeholder="+55 (00) 00000-0000">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="obs" class="form-label">Mensagem:</label>
+                        <br>
+                        <textarea class="form-control" id="obs" rows="4" placeholder="Escreva sua mensagem"></textarea>
+                    </div>
+                    <div class="col-md-12">
+                        <label for="arquivos" class="form-label">Anexar Arquivos (opcional):</label>
+                        <input class="form-control" type="file" id="arquivos">
+                    </div>
+                    <div class="col-md-12 text-center mt-4">
+                        <button type="submit" class="btn btn-success me-2">Enviar</button>
+                        <button type="reset" class="btn btn-danger">Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+
+</html>

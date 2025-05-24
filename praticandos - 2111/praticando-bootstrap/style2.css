@@ -1,0 +1,12 @@
+p, h1, li {
+    text-align: justify;
+}
+
+body {
+    background-color: lightslategray;
+    color: white;
+}
+
+.pag {
+    margin: 2%;
+}

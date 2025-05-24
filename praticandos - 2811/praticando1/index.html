@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            max-width: 2000px;
+            align-content: space-between;
+        }
+        .titulo {
+            margin-bottom: 20px;
+        }
+        .grupo-botoes {
+            margin-bottom: 10px;
+        }
+        #lado, #paragrafos, #imagens {
+            display: inline-block;
+            vertical-align: top;
+        }
+        #lado {
+            width: 20%;
+            text-align: center;
+        }
+        #paragrafos {
+            width: 70%;
+            text-align: center;
+        }
+        #imagens {
+            width: 40%;
+            text-align: center;
+        }
+        #conteudo {
+            margin-top: 30px;
+        }
+
+        #alinha{
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="container mt-4">
+    <h1 class="titulo text-left">Praticando 1 - Manipulações</h1>
+    
+    <div class="grupo-botoes d-flex justify-content-between">
+        <!-- Controle de Lado -->
+        <div id="lado">
+            <h6>Lado</h6>
+            <div class="btn-group" role="group" aria-label="Escolha de lado">
+                <input type="radio" class="btn-check" name="lado" id="ladoEsquerdo" value="esquerdo" autocomplete="off" checked onchange="setLado('esquerdo')">
+                <label class="btn btn-outline-primary" for="ladoEsquerdo">Esquerdo</label>
+
+                <input type="radio" class="btn-check" name="lado" id="ladoDireito" value="direito" autocomplete="off" onchange="setLado('direito')">
+                <label class="btn btn-outline-primary" for="ladoDireito">Direito</label>
+            </div>
+        </div>
+
+        <!-- Botões de Parágrafos -->
+        <div id="paragrafos">
+            <h6 id="alinha">Parágrafos</h6>
+            <button class="btn btn-primary btn-sm" onclick="adicionarParagrafo()">Adicionar</button>
+            <button class="btn btn-primary btn-sm" onclick="removerPrimeiroParagrafo()">Remover primeiro</button>
+            <button class="btn btn-primary btn-sm" onclick="removerUltimoParagrafo()">Remover último</button>
+            <button class="btn btn-primary btn-sm" onclick="removerTodosParagrafos()">Remover todos</button>
+        </div>
+
+        <!-- Botões de Imagens -->
+        <div id="imagens">
+            <h6 id="alinha">Imagens</h6>
+            <button class="btn btn-primary btn-sm" onclick="adicionarImagem()">Adicionar</button>
+            <button class="btn btn-primary btn-sm" onclick="removerUmaImagem()">Remover uma</button>
+            <button class="btn btn-primary btn-sm" onclick="removerTodasImagens()">Remover todas</button>
+        </div>
+    </div>
+
+    <!-- Conteúdo -->
+    <div id="conteudo"></div>
+
+    <script>
+        let ladoAtual = 'esquerdo';
+        let contadorParagrafos = 0;
+
+        function setLado(lado) {
+            ladoAtual = lado;
+            // Realinha todos os parágrafos com o novo lado
+            const paragrafos = document.querySelectorAll('#conteudo p');
+            paragrafos.forEach(paragrafo => {
+                if (lado === 'esquerdo') {
+                    paragrafo.style.textAlign = 'left';
+                } else {
+                    paragrafo.style.textAlign = 'right';
+                }
+            });
+
+            // Realinha todas as imagens com o novo lado
+            const imagens = document.querySelectorAll('#conteudo img');
+            imagens.forEach(imagem => {
+                if (lado === 'esquerdo') {
+                    imagem.style.float = 'left';
+                } else {
+                    imagem.style.float = 'right';
+                }
+            });
+        }
+
+        function adicionarParagrafo() {
+            // Incrementa o contador e cria o parágrafo
+            contadorParagrafos++;
+            const paragrafo = document.createElement('p');
+            paragrafo.textContent = `#${contadorParagrafos} - Lorem ipsum dolor sit amet, consectetur adipiscing elit.`;
+
+            // Define o alinhamento do parágrafo com base no lado escolhido
+            const ladoDiv = document.getElementById('conteudo');
+            if (ladoAtual === 'esquerdo') {
+                paragrafo.style.textAlign = 'left';
+            } else {
+                paragrafo.style.textAlign = 'right';
+            }
+            ladoDiv.appendChild(paragrafo);
+        }
+
+        function removerPrimeiroParagrafo() {
+            const ladoDiv = document.getElementById('conteudo');
+            const primeiroParagrafo = ladoDiv.querySelector('p');
+            if (primeiroParagrafo) {
+                ladoDiv.removeChild(primeiroParagrafo);
+            }
+        }
+
+        function removerUltimoParagrafo() {
+            const ladoDiv = document.getElementById('conteudo');
+            const paragrafos = ladoDiv.querySelectorAll('p');
+            if (paragrafos.length > 0) {
+                ladoDiv.removeChild(paragrafos[paragrafos.length - 1]);
+            }
+        }
+
+        function removerTodosParagrafos() {
+            const ladoDiv = document.getElementById('conteudo');
+            const paragrafos = ladoDiv.querySelectorAll('p');
+            paragrafos.forEach(paragrafo => ladoDiv.removeChild(paragrafo));
+
+            // Reinicia a contagem de parágrafos
+            contadorParagrafos = 0;
+        }
+
+        function adicionarImagem() {
+            const imagem = document.createElement('img');
+            imagem.src = 'gatinho.jpg';
+            imagem.alt = 'Imagem';
+            imagem.width = 150;
+            imagem.length = 150;
+            imagem.className = 'img-thumbnail me-2';
+
+            const ladoDiv = document.getElementById('conteudo');
+            if (ladoAtual === 'esquerdo') {
+                imagem.style.float = 'left';
+            } else {
+                imagem.style.float = 'right';
+            }
+            ladoDiv.appendChild(imagem);
+        }
+
+        function removerUmaImagem() {
+            const ladoDiv = document.getElementById('conteudo');
+            const imagens = ladoDiv.querySelectorAll('img');
+            if (imagens.length > 0) {
+                ladoDiv.removeChild(imagens[0]);
+            }
+        }
+
+        function removerTodasImagens() {
+            const ladoDiv = document.getElementById('conteudo');
+            const imagens = ladoDiv.querySelectorAll('img');
+            imagens.forEach(imagem => ladoDiv.removeChild(imagem));
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+p{
+    color: red;
+}
+body{
+    background-color: lightblue;
+}
+
+table, td{
+    border: solid 1px red;
+}
+
+td{
+    padding: 30px 60px;
+}
+
+.linha1{
+    background-color: green;
+}
+
+.linha2{
+    background-color: red;
+}
+
+.linha3{
+    background-color: blue;
+}
+
+.linha4{
+    background-color: yellow;
+}
+
+
+.legenda td{
+    padding: 2px;
+}
+
+.branco{
+    background-color: white;
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rio de Janeiro</title>
+    <style>
+
+
+        body {
+            background-color: lightblue;
+            color: rgb(54, 118, 139);
+        }
+
+        .span1 {
+            color: black;
+            background-color: yellow;
+        }
+
+        /* Rio de Janeiro */
+        .container {
+            display: flex;
+            justify-content: space-between; /* Distribui igualmente o espaço entre as imagens */
+            gap: 10px; /* Define um espaçamento mínimo entre as imagens */
+            margin-bottom: 20px;
+        }
+
+        .image {
+            flex-grow: 1;
+            height: 300px; /* Define a altura padrão para as imagens (retângulo) */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Estilos específicos para cada imagem */
+        .imagem1rj {
+            background-image: url('imagens/riodejaneiro/imagem1rj.jpg');
+        }
+        .imagem2rj {
+            background-image: url('imagens/riodejaneiro/imagem2rj.jpg');
+        }
+        .imagem3rj {
+            background-image: url('imagens/riodejaneiro/imagem3rj.jpg');
+        }
+
+
+        /* São Gonçalo */
+
+        /* Estilos específicos para cada imagem */
+        .imagem1sg {
+            background-image: url('imagens/riodejaneiro/imagem1sg.jpg');
+        }
+        .imagem2sg {
+            background-image: url('imagens/riodejaneiro/imagem2sg.jpg');
+        }
+        .imagem3sg {
+            background-image: url('imagens/riodejaneiro/imagem3sg.jpg');
+        }
+
+        /* Duque de Caxias */
+
+        /* Estilos específicos para cada imagem */
+        .imagem1dc {
+            background-image: url('imagens/riodejaneiro/imagem1dc.jpg');
+        }
+        .imagem2dc {
+            background-image: url('imagens/riodejaneiro/imagem2dc.jpg');
+        }
+        .imagem3dc {
+            background-image: url('imagens/riodejaneiro/imagem3dc.jpg');
+        }
+
+
+         /* Nova Iguaçu */
+
+        /* Estilos específicos para cada imagem */
+        .imagem1ni {
+            background-image: url('imagens/riodejaneiro/imagem1ni.jpg');
+        }
+        .imagem2ni {
+            background-image: url('imagens/riodejaneiro/imagem2ni.jpg');
+        }
+        .imagem3ni {
+            background-image: url('imagens/riodejaneiro/imagem3ni.jpg');
+        }
+
+        /* Niterói */
+
+        /* Estilos específicos para cada imagem */
+        .imagem1nt {
+            background-image: url('imagens/riodejaneiro/imagem1nt.jpg');
+        }
+        .imagem2nt {
+            background-image: url('imagens/riodejaneiro/imagem2nt.jpeg');
+        }
+        .imagem3nt {
+            background-image: url('imagens/riodejaneiro/imagem3nt.jpg');
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="topo">As cinco maiores cidades de São Paulo</h1>
+        <ol>
+            <li><a href="#rj">Rio de Janeiro</a></li>
+            <li><a href="#sg">São Gonçalo</a></li>
+            <li><a href="#dc">Duque de Caxias</a></li>
+            <li><a href="#ni">Nova Iguaçu</a></li>
+            <li><a href="#nt">Niterói</a></li>
+        </ol>
+        <h2 id="rj">1. Rio de Janeiro</h2>
+        <p>Rio de Janeiro é a segunda maior cidade do Brasil, famosa por seu turismo e importância no setor de petróleo e gás.</p>
+
+        <p><strong>População:</strong>~6,7 milhões</p>
+
+        <!-- Contêiner das imagens Rio de Janeiro -->
+        <div class="container">
+            <div class="image imagem1rj"></div>
+            <div class="image imagem2rj"></div>
+            <div class="image imagem3rj"></div>
+        </div>
+        <p><a href="#topo">Voltar ao topo</a></p>
+        <p><a href="index.html">Página Principal</a></p>
+        <h2 id="sg">2. São Gonçalo</h2>
+        <p>São Gonçalo é uma cidade com grande crescimento populacional, próxima à capital.</p>
+        <p><strong>População:</strong>~1,1 milhão</p>
+        <!-- Contêiner das imagens São Gonçalo -->
+        <div class="container">
+            <div class="image imagem1sg"></div>
+            <div class="image imagem2sg"></div>
+            <div class="image imagem3sg"></div>
+        </div>
+        <p><a href="#topo">Voltar ao topo</a></p>
+        <p><a href="index.html">Página Principal</a></p>
+        <h2 id="dc">3. Duque de Caxias</h2>
+        <p>Duque de Caxias é um importante polo industrial e logístico, com presença forte no setor de petróleo.</p>
+        <p><strong>População:</strong>~930 mil</p>
+        <div class="container">
+            <div class="image imagem1dc"></div>
+            <div class="image imagem2dc"></div>
+            <div class="image imagem3dc"></div>
+        </div>
+        <p><a href="#topo">Voltar ao topo</a></p>
+        <p><a href="index.html">Página Principal</a></p>
+        <h2 id="ni">4. Nova Iguaçu</h2>
+        <p>Nova Iguaçu é uma grande cidade da Baixada Fluminense, com comércio e serviços expressivos.</p>
+        <p><strong>População:</strong>~830 mil</p>
+        <div class="container">
+            <div class="image imagem1ni"></div>
+            <div class="image imagem2ni"></div>
+            <div class="image imagem3ni"></div>
+        </div>
+        <p><a href="#topo">Voltar ao topo</a></p>
+        <p><a href="index.html">Página Principal</a></p>
+        <h2 id="nt">5. Niterói</h2>
+        <p>Niterói é conhecida por seu alto IDH, sendo um importante centro de serviços e educação.</p>
+        <p><strong>População:</strong>~520 mil</p>
+        <div class="container">
+            <div class="image imagem1nt"></div>
+            <div class="image imagem2nt"></div>
+            <div class="image imagem3nt"></div>
+        </div>
+        <p><a href="#topo">Voltar ao topo</a></p>
+        <p><a href="index.html">Página Principal</a></p>
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+.body{
+    background-color: rgba(255,113,0,255);
+}
+
+.container1 {
+    margin-left: 4vw;
+    margin-right: 4vw;
+    background-color: rgba(176,72,223,255);
+}
+
+.image1 {
+    width: 20vw;
+    float: right;
+    margin-left: 3vw;
+    margin-right: 2vw;
+    margin-bottom: 2vw;
+} 
+
+.image2 {
+    width: 20vw;
+    float: left;
+    margin-right: 3vw;
+    margin-left: 2vw;
+    margin-bottom: 2vw;
+} 
+
+.image3 {
+    width: 20vw;
+    float: right;
+    margin-right: 2vw;
+    margin-left: 3vw;
+    margin-bottom: 2vw;
+} 
+
+.clear {
+    clear: both;
+}
+
+p{
+    text-align: justify;
+    margin-top: 10px;
+}
+
+
+.emilys-candy-regular {
+    font-family: "Emilys Candy", serif;
+    font-weight: bold;
+    font-style: normal;
+  }
+  

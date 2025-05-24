@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+p{
+    color: red;
+}
+
+table, td{
+    border: solid 1px red;
+}
+
+
+.verde{
+    background-color: green;
+}
+
+.white{
+    background-color: white;
+}
+
+.verdeClaro{
+    background-color: lightgreen;
+}
+
+.cinza{
+    background-color: darkgray;
+    color: white;
+}
+
+.preto{
+    background-color: black;
+    color: white;
+}
+
+.cinzaClaro{
+    background-color: lightgray;
+    color: white;
+}

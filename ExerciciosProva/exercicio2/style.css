@@ -1,0 +1,67 @@
+body{
+    background-color: bisque;
+}
+
+
+table, td{
+    border: solid 1px black;
+    background-color: white;
+}
+
+.thead{
+    background-color: lightgray;
+}
+
+.div1{
+    border: solid 5px yellowgreen;
+    background-color: lightskyblue;
+    padding: 50px;
+}
+
+.div2{
+    border: solid 5px yellowgreen;
+    background-color: lightskyblue;
+    padding: 50px;
+}
+
+.div3{
+    border: solid 5px yellowgreen;
+    background-color: lightskyblue;
+    padding: 50px;
+}
+
+.div4{
+    border: solid 5px yellowgreen;
+    background-color: lightskyblue;
+    padding: 50px;
+}
+
+.div5{
+    border: solid 5px yellowgreen;
+    background-color: lightskyblue;
+    padding: 50px;
+}
+
+.img3{
+    float: right;
+    width: 100px;
+}
+
+.span{
+    background-color: yellow;
+}
+
+.img1{
+    float: right;
+    width: 100px;
+}
+
+.img2{
+    float: left;
+    width: 100px;
+}
+
+.clear{
+    clear: left;
+}
+

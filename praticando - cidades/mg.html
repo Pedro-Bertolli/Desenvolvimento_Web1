@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minas Gerais</title>
+    <style>
+
+        body{
+            background-color: rgba(255,249,225,255);
+            color: rgb(101, 130, 96);
+        }
+
+        .span1 {
+            color: black;
+            background-color: yellow;
+        }
+
+        /* Belo Horizonte */
+        .container {
+            display: flex;
+            justify-content: space-between; /* Distribui igualmente o espaço entre as imagens */
+            gap: 10px; /* Define um espaçamento mínimo entre as imagens */
+            margin-bottom: 20px;
+        }
+
+        .image {
+            flex-grow: 1;
+            height: 300px; /* Define a altura padrão para as imagens (retângulo) */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Estilos específicos para cada imagem */
+        .imagem1bh {
+            background-image: url('imagens/minasgerais/imagem1bh.jpg');
+        }
+        .imagem2bh {
+            background-image: url('imagens/minasgerais/imagem2bh.jpg');
+        }
+        .imagem3bh {
+            background-image: url('imagens/minasgerais/imagem3bh.jpg');
+        }
+
+        /* Uberlândia */
+
+        /* Estilos específicos para cada imagem */
+        .imagem1ub {
+            background-image: url('imagens/minasgerais/imagem1ub.jpg');
+        }
+        .imagem2ub {
+            background-image: url('imagens/minasgerais/imagem2ub.jpg');
+        }
+        .imagem3ub {
+            background-image: url('imagens/minasgerais/imagem3ub.jpg');
+        }
+
+        /* Contagem */
+
+        /* Estilos específicos para cada imagem */
+        .imagem1ct {
+            background-image: url('imagens/minasgerais/imagem1ct.jpg');
+        }
+        .imagem2ct {
+            background-image: url('imagens/minasgerais/imagem2ct.jpg');
+        }
+        .imagem3ct {
+            background-image: url('imagens/minasgerais/imagem3ct.jpg');
+        }
+
+
+         /* Juiz de Fora */
+
+        /* Estilos específicos para cada imagem */
+        .imagem1jf {
+            background-image: url('imagens/minasgerais/imagem1jf.jpg');
+        }
+        .imagem2jf {
+            background-image: url('imagens/minasgerais/imagem2jf.jpg');
+        }
+        .imagem3jf {
+            background-image: url('imagens/minasgerais/imagem3jf.jpg');
+        }
+
+        /* Betim */
+
+        /* Estilos específicos para cada imagem */
+        .imagem1bt {
+            background-image: url('imagens/minasgerais/imagem1bt.jpeg');
+        }
+        .imagem2bt {
+            background-image: url('imagens/minasgerais/imagem2bt.jpg');
+        }
+        .imagem3bt {
+            background-image: url('imagens/minasgerais/imagem3bt.jpg');
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="topo">As cinco maiores cidades de São Paulo</h1>
+        <ol>
+            <li><a href="#bh">Belo Horizante</a></li>
+            <li><a href="#ub">Uberlândia</a></li>
+            <li><a href="#ct">Contagem</a></li>
+            <li><a href="#jf">Juiz de Fora</a></li>
+            <li><a href="#bt">Betim</a></li>
+        </ol>
+        <h2 id="bh">1. Belo Horizante</h2>
+        <p>Belo Horizonte é a capital do estado e um importante centro administrativo, econômico e cultural.</p>
+        <p><strong>População:</strong> ~2,5 milhões</p>
+
+        <!-- Contêiner das imagens Belo Horizonte -->
+        <div class="container">
+            <div class="image imagem1bh"></div>
+            <div class="image imagem2bh"></div>
+            <div class="image imagem3bh"></div>
+        </div>
+        <p><a href="#topo">Voltar ao topo</a></p>
+        <p><a href="index.html">Página Principal</a></p>
+        <h2 id="ub">2. Uberlândia</h2>
+        <p>Uberlândia tem forte presença no agronegócio e no setor de serviços.</p>
+        <p><strong>População:</strong> ~711 mil</p>
+        <!-- Contêiner das imagens Uberlândia -->
+        <div class="container">
+            <div class="image imagem1ub"></div>
+            <div class="image imagem2ub"></div>
+            <div class="image imagem3ub"></div>
+        </div>
+        <p><a href="#topo">Voltar ao topo</a></p>
+        <p><a href="index.html">Página Principal</a></p>
+        <!-- Contêiner das imagens Contagem -->
+        <h2 id="ct">3. Contagem</h2>
+        <p>Contagem faz parte da Região Metropolitana de BH, com grande foco industrial.</p>
+        <p><strong>População:</strong> ~673 mil</p>
+        <div class="container">
+            <div class="image imagem1ct"></div>
+            <div class="image imagem2ct"></div>
+            <div class="image imagem3ct"></div>
+        </div>
+        <p><a href="#topo">Voltar ao topo</a></p>
+        <p><a href="index.html">Página Principal</a></p>
+        <!-- Contêiner das imagens Juiz de Fora -->
+        <h2 id="jf">4. Juiz de Fora</h2>
+        <p>Juiz de Fora é um importante polo regional, com destaque para educação e serviços.</p>
+        <p><strong>População:</strong>~586 mil</p>
+        <div class="container">
+            <div class="image imagem1jf"></div>
+            <div class="image imagem2jf"></div>
+            <div class="image imagem3jf"></div>
+        </div>
+        <p><a href="#topo">Voltar ao topo</a></p>
+        <p><a href="index.html">Página Principal</a></p>
+        <!-- Contêiner das imagens Betim -->
+        <h2 id="bt">5. Betim</h2>
+        <p>Betim, também na Região Metropolitana de BH, abriga grandes indústrias, incluindo a Fiat.</p>
+        <p><strong>População:</strong> ~450 mil</p>
+        <div class="container">
+            <div class="image imagem1bt"></div>
+            <div class="image imagem2bt"></div>
+            <div class="image imagem3bt"></div>
+        </div>
+        <p><a href="#topo">Voltar ao topo</a></p>
+        <p><a href="index.html">Página Principal</a></p>
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>

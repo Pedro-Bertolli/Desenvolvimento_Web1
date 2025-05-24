@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+.div1{
+    background-color: lightgreen;
+}
+
+.div2{
+    background-color: green;
+}
+
+.div3{
+    background-color: rgb(13, 66, 13);
+}
+
+.div4{
+    background-color: rgb(173, 29, 29);
+}
+
+.div5{
+    background-color: red;
+}
+
+.div6{
+    background-color: darkred;
+}

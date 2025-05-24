@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>São Paulo</title>
+    <style>
+        body{
+            background-color: rgb(255, 236, 204);
+            color: rgb(192, 79, 71);
+        }
+
+        .span1 {
+            color: black;
+            background-color: yellow;
+        }
+
+        /* São Paulo */
+        .container {
+            display: flex;
+            justify-content: space-between; /* Distribui igualmente o espaço entre as imagens */
+            gap: 10px; /* Define um espaçamento mínimo entre as imagens */
+            margin-bottom: 20px;
+        }
+
+        .image {
+            flex-grow: 1;
+            height: 300px; /* Define a altura padrão para as imagens (retângulo) */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Estilos específicos para cada imagem */
+        .imagem1sp {
+            background-image: url('imagens/saopaulo/imagem1sp.jpg');
+        }
+        .imagem2sp {
+            background-image: url('imagens/saopaulo/imagem2sp.jpg');
+        }
+        .imagem3sp {
+            background-image: url('imagens/saopaulo/imagem3sp.jpg');
+        }
+
+    
+
+        /* Guarulhos */
+
+        /* Estilos específicos para cada imagem */
+        .imagem1g {
+            background-image: url('imagens/saopaulo/imagem1g.jpg');
+        }
+        .imagem2g {
+            background-image: url('imagens/saopaulo/imagem2g.jpg');
+        }
+        .imagem3g {
+            background-image: url('imagens/saopaulo/imagem3g.jpg');
+        }
+
+        /* Campinas */
+
+        /* Estilos específicos para cada imagem */
+        .imagem1c {
+            background-image: url('imagens/saopaulo/imagem1c.jpg');
+        }
+        .imagem2c {
+            background-image: url('imagens/saopaulo/imagem2c.jpeg');
+        }
+        .imagem3c {
+            background-image: url('imagens/saopaulo/imagem3c.jpg');
+        }
+
+
+         /* São Bernardo do Campo */
+
+        /* Estilos específicos para cada imagem */
+        .imagem1sb {
+            background-image: url('imagens/saopaulo/imagem1sb.jpg');
+        }
+        .imagem2sb {
+            background-image: url('imagens/saopaulo/imagem2sb.jpg');
+        }
+        .imagem3sb {
+            background-image: url('imagens/saopaulo/imagem3sb.jpg');
+        }
+
+        /* Santo André */
+
+        /* Estilos específicos para cada imagem */
+        .imagem1sa {
+            background-image: url('imagens/saopaulo/imagem1sa.jpg');
+        }
+        .imagem2sa {
+            background-image: url('imagens/saopaulo/imagem2sa.jpg');
+        }
+        .imagem3sa {
+            background-image: url('imagens/saopaulo/imagem3sa.jpg');
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="topo">As cinco maiores cidades de São Paulo</h1>
+        <ol>
+            <li><a href="#sp">São Paulo</a></li>
+            <li><a href="#g">Guarulhos</a></li>
+            <li><a href="#c">Campinas</a></li>
+            <li><a href="#sb">São Bernardo do Campo</a></li>
+            <li><a href="#sa">Santo André</a></li>
+        </ol>
+        <h2 id="sp">1. São Paulo</h2>
+        <p>A maior cidade do Brasil, e centro econômico, financeiro e cultural do país.</p>
+
+        <p><strong>População:</strong><span class="span1"> ~12,3 milhões</span></p>
+
+        <!-- Contêiner das imagens São Paulo -->
+        <div class="container">
+            <div class="image imagem1sp"></div>
+            <div class="image imagem2sp"></div>
+            <div class="image imagem3sp"></div>
+        </div>
+        <p><a href="#topo">Voltar ao topo</a></p>
+        <p><a href="index.html">Página Principal</a></p>
+        <h2 id="g">2. Guarulhos</h2>
+        <p>Grande polo industrial e abriga o principal aeroporto internacional do Brasil.</p>
+        <p><strong>População:</strong>~1,4 milhão</p>
+        <!-- Contêiner das imagens Guarulhos -->
+        <div class="container">
+            <div class="image imagem1g"></div>
+            <div class="image imagem2g"></div>
+            <div class="image imagem3g"></div>
+        </div>
+        <p><a href="#topo">Voltar ao topo</a></p>
+        <p><a href="index.html">Página Principal</a></p>
+        <h2 id="c">3. Campinas</h2>
+        <p>Importante centro de tecnologia, ciência e educação.</p>
+        <p><strong>População:</strong>~1,2 milhão</p>
+        <div class="container">
+            <div class="image imagem1c"></div>
+            <div class="image imagem2c"></div>
+            <div class="image imagem3c"></div>
+        </div>
+        <p><a href="#topo">Voltar ao topo</a></p>
+        <p><a href="index.html">Página Principal</a></p>
+        <h2 id="sb">4. São Bernardo do Campo</h2>
+        <p>Conhecida por sua forte presença na indústria automobilística.</p>
+        <p><strong>População:</strong>~850 mil</p>
+        <div class="container">
+            <div class="image imagem1sb"></div>
+            <div class="image imagem2sb"></div>
+            <div class="image imagem3sb"></div>
+        </div>
+        <p><a href="#topo">Voltar ao topo</a></p>
+        <p><a href="index.html">Página Principal</a></p>
+        <h2 id="sa"> 5. Santo André</h2>
+        <p>Também parte do ABC Paulista, com destaque para a indústria e comércio.</p>
+        <p><strong>População:</strong>~723 mil</p>
+        <div class="container">
+            <div class="image imagem1sa"></div>
+            <div class="image imagem2sa"></div>
+            <div class="image imagem3sa"></div>
+        </div>
+        <p><a href="#topo">Voltar ao topo</a></p>
+        <p><a href="index.html">Página Principal</a></p>
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>
